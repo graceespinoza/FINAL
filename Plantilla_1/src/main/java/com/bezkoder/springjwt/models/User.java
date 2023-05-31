@@ -8,6 +8,8 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 @Entity
 @Table(name = "users", 
     uniqueConstraints = { 
@@ -29,7 +31,8 @@ public class User {
   private String email;
   
   @NotBlank
-  @Size(max = 120)
+  @Size(max = 120) //json anotation
+  @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
   private String password;
   
   // @NotBlank

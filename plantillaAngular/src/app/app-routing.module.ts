@@ -19,7 +19,7 @@ const routes: Routes = [
   {
     path: 'usuario',
     component: UsuarioComponent,
-    //canActivate: [AuthGuard],
+    // canActivate: [AuthGuard], 
   },
   {
     path: 'usuario/editar',

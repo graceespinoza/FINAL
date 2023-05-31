@@ -14,7 +14,7 @@
           <label for="username">Username</label>
           <input placeholder="Ingrese su username..." formControlName="username"  type="text" id="tabla3">
 
-          <label for="direccion">Direccion</label>
+          <label for="direccion">Apellidos</label>
           <input placeholder="Ingrese su username..." formControlName="lastname"  type="text" id="tabla4">
 
           <label for="email">Email </label>
@@ -24,7 +24,7 @@
           <input placeholder="Escriba contrasena" formControlName="password"  type="password" id="tabla6">
          
       </div>
-      <button [disabled]="!form.valid" (click)="guardar()" name="registro" type="submit" class="btn btn-danger btn-sm m-2" id="button"> 
+      <button [disabled]="!form.valid" name="registro" type="submit" class="btn btn-danger btn-sm m-2" id="button"> 
           <a  >¡Registrarse!</a>
       </button>
       

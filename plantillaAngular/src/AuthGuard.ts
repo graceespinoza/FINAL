@@ -21,6 +21,4 @@ export class AuthGuard{
       return this.router.parseUrl('/login');
     }
   }
-
-
 }

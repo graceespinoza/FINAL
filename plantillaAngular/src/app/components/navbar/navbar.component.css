@@ -41,6 +41,8 @@ li {
 	/* LOGO */
 .logo {
 	font-size: 32px;
+	font-style: italic;
+	color: #fff;
 	}
 	
 	/* NAVBAR MENU */

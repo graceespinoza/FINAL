@@ -26,7 +26,7 @@ export class UsuarioServiceService {
     return this.http.post<Usuario>(`${baseUrl}/usuario`, usuario,  {headers});
   }
   registrarse(usuario: Usuario){
-    return this.http.post<Usuario>(`${baseUrl}/auth/signup`, usuario,  {headers});
+    return this.http.post<Usuario>(`${baseUrl}/auth/signup`, usuario);
   }
   obtenerUnUsuario(id: number){
     return this.http.get<Usuario>(`${baseUrl}/usuario/${id}`,  {headers});

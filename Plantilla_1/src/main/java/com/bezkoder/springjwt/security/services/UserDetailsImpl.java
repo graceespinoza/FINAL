@@ -26,8 +26,7 @@ public class UserDetailsImpl implements UserDetails {
   private String lastname;
 
   private String status;
-
-  @JsonIgnore
+  
   private String password;
 
   private Collection<? extends GrantedAuthority> authorities;
